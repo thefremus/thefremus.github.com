@@ -20,16 +20,78 @@
     pretend like I know something.
 </p>
 
-<h1>Elements with different contextual meaning in HTML5</h1>
+<h1>Text Elements with different contextual meaning in HTML5</h1>
 
 <ul>
     <li>
         <strong>&lt;b&gt;</strong> - no longer represents boldface but is now used to indicate "stylistically offset"
         text
         without conveying importance. Use <strong>&lt;b&gt;</strong> for keywords, product names and actionable items.
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-b-element">The b element on W3</a>
+    </li>
+    <li>
+        <strong>&lt;i&gt;</strong> - used for text in an "alternate voice or mood". Could be spoken text, thoughts or
+        something similar that doesn't convey importance or emphasis.
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-i-element">The i elemenent</a>
+    </li>
+    <li>
+        <strong>&lt;strong&gt;</strong> - for strong importance, where the content is more important than nearby words
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-strong-element">The strong element</a>
+    </li>
+    <li>
+        <strong>&lt;em&gt;</strong> - indicates emphatic stress
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-em-element">The em element</a>
+    </li>
+    <li>
+        <strong>&lt;small&gt;</strong> - used for small print or side comments. Useful for copyright lines or
+        adding a source line to an image
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-small-element">The small element</a>
     </li>
 </ul>
 
+<h1>New text elements in HTML5</h1>
+
+<h2>&lt;mark&gt;</h2>
+
+<p>This is a W3 element -
+    <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-mark-element">the mark element</a>
+</p>
+<p>
+    handy for highlighting text on a page.
+</p>
+<mark style="background-color: yellow">making a mark</mark>
+
+<h2>&lt;time&gt;</h2>
+
+<p>
+    indicates content that is a time or date, which can be made machine-readable with the datetime attribute. defines
+    time on a 24-hour clock and a date in the Gregorian calendar. Helps search engines produce better results.
+</p>
+
+<p>This is a W3 element -
+    <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-time-element">
+        time element
+    </a></p>
+<ul>
+    <li>
+        <time>2016</time>
+    </li>
+    <li>
+        <time>2016-03-21</time>
+    </li>
+    <li>
+        <time>11-12</time>
+    </li>
+</ul>
+
+<h2>&lt;meter&gt;</h2>
+<p>
+    Indicates content that is a fraction of a known range. Not a W3 element although supported in WebStorm. Not
+    supported
+    in IE lols
+</p>
+<meter value="2" min="0" max="10">2 out of 10</meter>
+<meter value="0.6">60%</meter>
 </body>
 
 </html>
