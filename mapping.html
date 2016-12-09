@@ -52,9 +52,12 @@
         //  }
         //}).addTo(map);
       };
+      function error(err){
+        console.WARN('ERROR()' + err.code + '): ' + err.message);
+      };
       function getLocation() {
         if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
+          navigator.geolocation.getCurrentPosition(showPosition, error, {enableHighAccuracy:true, timeout: 5000, maximumAge:0});
         } else {
           x.innerHTML = "Geolocation is not supported by this browser.";
         }
