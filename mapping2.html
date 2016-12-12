@@ -26,8 +26,9 @@ require([
         function showPosition(position) {
         //lt.value = position.coords.latitude;
         //lo.value = position.coords.longitude;
-        // x.innerHTML = "Latitude: " + position.coords.latitude +
-        // "<br>Longitude: " + position.coords.longitude;
+        var x = getElementById("demo");
+         x.innerHTML = "Latitude: " + position.coords.latitude +
+         "<br>Longitude: " + position.coords.longitude;
         //console.log("latitude -->" + $("#latitude").val());
         //console.log("longitude -->" + $("#longitude").val());
         //var map = L.map("map").setView([position.coords.latitude, position.coords.longitude], 15);
