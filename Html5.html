@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fredrik Erasmus - Html5</title>
+    <link rel="stylesheet" href="basic.css" />
 </head>
 <body>
 
@@ -146,6 +147,108 @@
     </svg>
 </div>
 
+<h1>Semantic tags</h1>
 
+<ul>
+    <li>
+        &lt;address&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-address-element">Address element</a>
+    </li>
+    <li>
+        &lt;article&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-article-element">Article element</a>
+    </li>
+    <li>
+        &lt;aside&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-aside-element">Aside element</a>
+    </li>
+    <li>
+        &lt;details&gt;
+        does not exist on w3
+    </li>
+    <li>
+        &lt;footer&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-footer-element">Footer element</a>
+    </li>
+    <li>
+        &lt;header&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-header-element">Header element</a>
+    </li>
+    <li>
+        &lt;hgroup&gt;
+        not on w3
+    </li>
+    <li>
+        &lt;nav&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-nav-element">Nav element</a>
+    </li>
+    <li>
+        &lt;section&gt;
+        <a href="https://www.w3.org/TR/html5/sections.html#the-section-element">Section element</a>
+    </li>
+    <li>
+        &lt;summary&gt;
+        not on w3
+    </li>
+    <li>
+        &lt;wbr&gt;
+        <a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-wbr-element">WBR element</a>
+    </li>
+</ul>
+
+<h2>Sections</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+        Situation
+            </th>
+            <th>
+                Use
+            </th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Separate content that is independent from the rest of the content on the Web page or document
+            </td>
+            <td>&lt;article&gt;</td>
+        </tr>
+        <tr>
+            <td>
+                Plan to syndicate a block of content
+            </td>
+            <td>&lt;article&gt;</td>
+        </tr>
+        <tr>
+            <td>
+                Create a sidebar
+            </td>
+            <td>&lt;aside&gt;</td>
+        </tr>
+        <tr>
+            <td>
+                Wrap and position multiple sections that are not related to each other
+            </td>
+            <td>&lt;div&gt;</td>
+        </tr>
+        <tr>
+            <td>
+                Add a drop shadow to or border around an item
+            </td>
+            <td>&lt;div&gt;</td>
+        </tr>
+    </tbody>
+</table>
+
+<input id="country" name="country" size="30" list="countries" autofocus="autofocus" />
+
+<datalist id="countries">
+    <option value="United States"></option>
+    <option value="Canada"></option>
+    <option value="United Kingdom"></option>
+</datalist>
 </body>
 </html>
