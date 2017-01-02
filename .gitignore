@@ -54,10 +54,15 @@ jspm_packages
 # .idea/sqlDataSources.xml
 # .idea/dynamic.xml
 # .idea/uiDesigner.xml
+.idea/jsLibraryMappings.xml
+.idea/modules.xml
+.idea/thefremus.github.com.iml
+.idea/vcs.xml
+.idea/workspace.xml
 
 # Gradle:
 # .idea/gradle.xml
-# .idea/libraries
+.idea/libraries
 
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
