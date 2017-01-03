@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Mapping mobile test2</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/esri-leaflet@2.0.6"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="demo"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map" style="min-height:200px"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+        function showPosition(position) {
+        var x = document.getElementById("map");
+         x.innerHTML = "Latitude: " + position.coords.latitude +
+         "<br>Longitude: " + position.coords.longitude;
+var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
+L.esri.basemapLayer("Topographic").addTo(map);
+var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+      };
+            function error(err){
+        console.WARN('ERROR()' + err.code + '): ' + err.message);
+      };
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, error, {enableHighAccuracy:true, timeout: 5000, maximumAge:0});
+        } else {
+          console.log("Geolocation is not supported by this browser.");
+        }
+      };
+      getLocation();
+</script>
+</body>
+
+</html>
